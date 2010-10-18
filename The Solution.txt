@@ -1,0 +1,85 @@
+**BASIC RULES**
+
+Turn Based
+
+Strength, Dexterity, Constitution
+
+All stats/attributes limited to (int) 20
+
+1 weapon, 1 armor max
+
+weapons- Damage (int)
+weapons- Base (ref to either strength or dextirity)
+weapon damage is zero if unarmed
+
+roll against X -- is roll of random number between 1 and X
+(X is the limit of the random number -- not to exceed 20)
+
+**COMBAT**
+*RA means roll against
+
+Everyone rolls against dexterity to detemine combat order
+Attackers randomly select defender
+
+RA dexterity for defender-- this is subtracted from a RA dexterity of the attacker
+positive number hits -- negative misses
+
+If hit- RA damage of attacker's weapon is added to RA attacker's main attribute of strength or dexterity whichever is referenced by base of attacker's weapon
+
+the protection value of the defender's armor is then subtracted from this hit sum
+
+if resulting value is is greater than zero, this number is subtracted from defending player
+
+characters with negative constitution are considered dead and gets removed
+
+play continues until everyone has taken a turn then a new turn is rolled and the game continues
+
+if armor has non-zero encumbrance player's dexterity decreases by that number as long as they are wearing the armor
+
+Game consists of two parties of characters, each party has at least one character
+
+User gets to set character names and character attributes
+
+Players can select from a set of weapons and armors
+
+**WEAPONS and ARMOR**
+Name of weapon -- Damage -- Encumbrance -- Base Reference
+
+Mace		-- 12 -- 06 -- Strength
+Dagger		-- 08 -- 04 --  Dexterity
+LongSword	-- 18 -- 12 -- Strength
+ShortBow		-- 14 -- 08 -- Dexterity
+Unarmed		-- 04 -- 00 -- Dexterity
+
+Name of armor -- Protection -- Encumbrance
+
+NoArmor		-- 00 -- 00
+ClothArmor	-- 06 -- 04
+LeatherArmor	-- 10 -- 06
+MailArmor		-- 12 -- 08
+PlateArmor		-- 16 -- 10
+
+**CHAR ROLL FOR STATS**
+First user choses the number of people each party will contain, both parties will contain the same number of members
+
+Then the player is asked to name each of their characters and give them stats
+
+a function is created with the ability to roll for stats, Players can hit the roll button to generate stats, if they want they can reroll up to 3 times
+
+Then they are allowed to chose which weapon and which armor the want then this continues for each member
+
+Computer players will be assigned stuff automatically and named enemy1, enemy2, etc
+
+**Formulas**
+
+for encumbrance A function called encumbrance will add weapon and armor encumbrance and tag it to [player name]encumbrance
+
+a function that rolls a random number up to whatever is told to it
+
+a function that rolls three numbers that when added together equals 40
+within this function is a random selector to decide whether one of the numbers rolled for is strength or dexerity -- only one or the other for each character
+
+a function that remembers what order the characters go in for this turn based on each character rolling a random number up to 20 and makes a player re-roll if they roll the same number as another player
+
+Output each turn says who is attacking who, the result of the roll to determine whether they hit or not, and another output of how much they hit for, and when a player is killed an output says player x killed player y
+
