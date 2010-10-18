@@ -1,0 +1,5 @@
+C:\Users\PyroTech\Documents\Homework\CSC202\RPG Kata\RPG Kata\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PyroTech\Documents\Homework\CSC202\RPG Kata\RPG Kata\bin\Debug\RPG Kata.exe
+C:\Users\PyroTech\Documents\Homework\CSC202\RPG Kata\RPG Kata\bin\Debug\RPG Kata.pdb
+C:\Users\PyroTech\Documents\Homework\CSC202\RPG Kata\RPG Kata\obj\Debug\RPG Kata.exe
+C:\Users\PyroTech\Documents\Homework\CSC202\RPG Kata\RPG Kata\obj\Debug\RPG Kata.pdb

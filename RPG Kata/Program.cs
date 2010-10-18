@@ -5,9 +5,17 @@ using System.Text;
 
 namespace RPG_Kata
 {
-
-    class Program
+    class RPG_Kata
     {
+        static void Main(string[] args)
+        {
+            string numberInParty;
+            Console.WriteLine("How many characters do you want in each party ?");
+            numberInParty = (Console.ReadLine());
+            Equipment.weaponsList();
+            Equipment.armorList();
+            Console.ReadKey();
+        }
 
         private int RandomNumber(int min, int max)
         {
@@ -15,9 +23,6 @@ namespace RPG_Kata
             return random.Next(min, max);
         }
 
-        static void Main(string[] args)
-        {
 
-        }
     }
 }
