@@ -16,6 +16,11 @@ namespace RPG_Kata
             Console.WriteLine("3) Mace       --  12  --  06   -- Strength");
             Console.WriteLine("4) Short Bow  --  14  --  08   -- Dexterity");
             Console.WriteLine("5) Long Sword --  18  --  12   -- Strength");
+            Console.WriteLine("         ** Pick a Weapon **");
+            int testOne = Character.RandomNumber.Next(1, 20);
+            int testTwo = Character.RandomNumber.Next(1, 20);
+            Console.WriteLine(testOne + "  " + testTwo);
+
         }
         internal static void armorList()
         {
@@ -25,6 +30,7 @@ namespace RPG_Kata
             Console.WriteLine("3) Leather Armor --  10  --  06");
             Console.WriteLine("4) Mail Armor    --  12  --  08");
             Console.WriteLine("5) Plate Armor   --  16  --  12");
+            Console.WriteLine("       ** Choose an Armor **");
         }
 
     }

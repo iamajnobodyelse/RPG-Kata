@@ -8,16 +8,17 @@ namespace RPG_Kata
 {
     public class Character
     {
-        static Random RandomNumber = new Random();
+        internal static Random RandomNumber = new Random();
 
-        internal static void createCharacter()
+        public static void createCharacter()
         {
+            int numberInParty;
             Console.WriteLine("How many characters do you want in your party ?");
-            int numberInParty = Convert.ToInt32(Console.ReadLine());
+            numberInParty = Convert.ToInt32(Console.ReadLine());
             FileInfo characterSpread = new FileInfo("Characters.txt");
             StreamWriter text = characterSpread.CreateText();
-            string[] nameOutput = new string[numberInParty];
             int[,] basicStats = new int[5, numberInParty];
+            string[] nameOutput = new string[numberInParty];
             for (int i = 0; i < numberInParty; i++)
             {
                 Console.WriteLine("Please enter next character's name: ");

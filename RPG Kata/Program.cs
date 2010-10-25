@@ -8,7 +8,7 @@ namespace RPG_Kata
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Character.createCharacter();
             Equipment.weaponsList();
